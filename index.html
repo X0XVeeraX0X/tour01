@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="login_div" class="main-div">
+<h3>Login</h3>
+<input type="email" placeholder="Email" id="email_field" />
+<input type="password" placeholder="Password" id="password_field" />
+<button onclick="login()">Login</button>
+</div>
+
+<div id="user_div" class="loggedin-div">
+<h3>Welcome user</h3>
+<p id="user_para">Welcome to login</p>
+<button onclick="logout()">Logout</button>
+<br><br>
+<button onclick="window.location.href='index1.html'">Tours</button>
+
+</div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCLbLAWmnWQOrJUsCkUQc_nobyDZqiR6oY",
+    authDomain: "tour-1682c.firebaseapp.com",
+    projectId: "tour-1682c",
+    storageBucket: "tour-1682c.appspot.com",
+    messagingSenderId: "590250373699",
+    appId: "1:590250373699:web:23b9532a5958481e2d9af6",
+    measurementId: "G-WBG1PZ48ET"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="index1.js"></script>
+</body>
+</html>
